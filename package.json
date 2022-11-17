@@ -6,6 +6,9 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "generate:edgeql": "pnpm generate:edgeql:client && pnpm generate:edgeql:queries",
+		"generate:edgeql:client": "npx @edgedb/generate edgeql-js --output-dir ./generated/edgeql --target ts --force-overwrite",
+		"generate:edgeql:queries": "npx @edgedb/generate queries --file ./generated/edgeql/queries --target ts --force-overwrite",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
