@@ -32,6 +32,15 @@
 $ npm install
 ```
 
+## Running the db
+
+```bash
+# database init
+edgedb project init
+# generate interfaces
+pnpm generate:edgeql
+```
+
 ## Running the app
 
 ```bash
