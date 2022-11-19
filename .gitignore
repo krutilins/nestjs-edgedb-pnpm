@@ -1,3 +1,7 @@
+# generated
+/generated/edgeql
+
+
 # compiled output
 /dist
 /node_modules
